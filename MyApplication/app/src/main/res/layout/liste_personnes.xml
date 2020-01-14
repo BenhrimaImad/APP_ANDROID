@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardElevation="10dp"
+    card_view:layout_goneMarginBottom="4dp"
+    card_view:layout_goneMarginLeft="2dp"
+    card_view:layout_goneMarginRight="2dp"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" >
+
+            <ImageView
+                android:id="@+id/photoPersonne"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:background="@android:drawable/ic_menu_report_image"
+                android:contentDescription="@string/todo"
+                android:elevation="20dp"
+                android:minHeight="75dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/subsitut_nom"
+                android:id="@+id/nomTexte"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:maxLines="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/subsitut_prenom"
+                android:id="@+id/roleTexte"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:maxLines="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/substitut_tel"
+                android:textSize="14sp"
+                android:id="@+id/numTelTexte"
+                android:maxLines="1"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/substitut_courriel"
+                android:textSize="14sp"
+                android:id="@+id/courrielTexte"
+                android:maxLines="1"/>
+
+        </LinearLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="role">
+        <item name="ETUD">ETUD</item>
+        <item name="PROF">PROF</item>
+        <item name="ADMIN">ADMIN</item>
+
+    </string-array>
+</resources>
