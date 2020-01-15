@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".AdminActivity"
+    tools:openDrawer="start">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="200dp"
+            android:layout_height="190dp"
+            android:layout_marginEnd="84dp"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintEnd_toEndOf="@id/txtNom"
+            app:layout_constraintTop_toBottomOf="@id/txtNom"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enregistrer"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <TextView
+            android:id="@+id/lblNom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nom :"
+            app:layout_constraintBaseline_toBaselineOf="@id/txtNom"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/lblPrenom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prenom :"
+            app:layout_constraintBaseline_toBaselineOf="@id/txtPrenom"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/lblClasse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Classe :"
+            app:layout_constraintBaseline_toBaselineOf="@id/txtClasse"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/lblEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email :"
+            app:layout_constraintBaseline_toBaselineOf="@id/txtEmail"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/lblPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password :"
+            app:layout_constraintBaseline_toBaselineOf="@id/txtPassword"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/lblTel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telephone :"
+            app:layout_constraintBaseline_toBaselineOf="@id/txtTel"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/lblProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile :"
+            app:layout_constraintBaseline_toBaselineOf="@id/txtProfile"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/txtNom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/lblNom"
+            app:layout_constraintTop_toBottomOf="@id/imgProfile" />
+
+        <EditText
+            android:id="@+id/txtPrenom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/lblPrenom"
+            app:layout_constraintTop_toBottomOf="@id/txtNom" />
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/txtClasse"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/lblClasse"
+            app:layout_constraintTop_toBottomOf="@id/txtPrenom" />
+
+        <EditText
+            android:id="@+id/txtEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/lblEmail"
+            app:layout_constraintTop_toBottomOf="@id/txtClasse" />
+
+        <EditText
+            android:id="@+id/txtPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/lblPassword"
+            app:layout_constraintTop_toBottomOf="@id/txtEmail"
+            android:inputType="textPassword"
+            />
+
+        <EditText
+            android:id="@+id/txtTel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/lblTel"
+            app:layout_constraintTop_toBottomOf="@id/txtPassword" />
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/txtProfile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/lblProfile"
+            app:layout_constraintTop_toBottomOf="@id/txtTel" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:menu="@menu/drawer_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

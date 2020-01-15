@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GridActivity">
+
+    <TextView
+        android:id="@+id/nom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="105dp"
+        android:layout_toEndOf="@id/image"
+        android:text="Apple"
+        android:textColor="#000"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/prenom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="105dp"
+        android:layout_toRightOf="@id/nom"
+        android:layout_toStartOf="@id/image"
+        android:text="Merde"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/nom"
+        android:layout_marginTop="27dp" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_below="@id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="105dp"
+        android:layout_centerHorizontal="true"
+        android:text="email@gmail.com"
+        android:textColor="#000"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/classe"
+        android:layout_below="@id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="Classe"
+        android:textColor="#000"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/tel"
+        android:layout_below="@id/classe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="0612345689"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/btnCall"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@android:color/transparent"
+        android:src="@android:drawable/stat_sys_vp_phone_call"
+        android:layout_toEndOf="@id/image"
+        android:layout_below="@id/image"
+        />
+</RelativeLayout>
